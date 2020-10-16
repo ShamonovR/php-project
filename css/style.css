@@ -1,0 +1,154 @@
+.card {
+	width: 32%;
+	margin-left: 1;
+}
+
+.shapka {
+    display: flex;
+}
+
+.knopka {
+    width: 100%;
+
+
+}
+
+.create_tovar {
+    margin-right: 50px;
+     width: 100%;
+}
+
+  
+
+@media print {
+    table tr td {
+     page-break-inside: avoid;
+      page-break-after: always
+    }
+    
+
+//аватар
+
+.card {
+  /* Добавить тени для создания эффекта "карты" */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+/* При наведении курсора мыши добавьте более глубокую тень */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* Добавить некоторые прокладки внутри контейнера для карт */
+.container {
+  padding: 2px 16px;
+}
+
+
+
+//конец аватара
+
+
+.mb-0{
+float:left;
+}
+.small{
+color:red;
+float:right;
+margin-left:70%;
+margin-top:20px;
+}
+.clear{
+clear:both;
+}
+
+ .table-wrapper {
+   overflow-x: scroll;
+ }
+ table {
+   min-width: 600px;
+}
+td {
+    border: solid 1px #ccc;
+}
+
+
+
+//подсказка
+
+   .help-tip{
+    position: absolute;
+    top: 15px;
+    right: 300px;
+    text-align: center;
+    background-color: #000000;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    font-size: 14px;
+    line-height: 26px;
+    cursor: default;
+}
+ 
+.help-tip:before{
+    content:'?';
+    font-weight: bold;
+    color:#fff;
+}
+ 
+.help-tip:hover p{
+    display:block;
+    transform-origin: 100% 0%;
+ 
+    -webkit-animation: fadeIn 0.3s ease-in-out;
+    animation: fadeIn 0.3s ease-in-out;
+ 
+}
+ 
+.help-tip p{
+    display: none;
+    text-align: left;
+    background-color: #1E2021;
+    padding: 10px;
+    width: 150px;
+    position: absolute;
+    border-radius: 3px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+    right: -4px;
+    color: #FFF;
+    font-size: 13px;
+    line-height: 1.4;
+}
+ 
+.help-tip p:before{
+    position: absolute;
+    content: '';
+    width:0;
+    height: 0;
+    border:6px solid transparent;
+    border-bottom-color:#1E2021;
+    right:10px;
+    top:-12px;
+}
+ 
+.help-tip p:after{
+    width:100%;
+    height:40px;
+    content:'';
+    position: absolute;
+    top:-40px;
+    left:0;
+}
+
+
+
+
+
+
+//end
+
+.btn btn-lg btn-block btn-outline-primary {
+  text-decoration: none;
+  display: inline-block;
+}
